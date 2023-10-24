@@ -1,0 +1,1 @@
+{"dataset": "C:/Users/naray/OneDrive/Desktop/MS-Data Science/Flowchart_final/handwritten-flowchart-with-cnn-master/Images/Train_data", "rois": null, "input_weight_path": "C:/Users/naray/OneDrive/Desktop/MS-Data Science/Flowchart_final/handwritten-flowchart-with-cnn-master/model/training_results/flowchart_3b_model.hdf5", "epochs": null, "learning_rate": null, "gpu": true}
