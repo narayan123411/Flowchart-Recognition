@@ -1,8 +1,8 @@
 # Recognition of handwritten flowcharts with CNNs
-Recognition of handwritten flowcharts using convolutional neural networks to regonize the digital flowchart.
+Recognition of handwritten flowcharts using convolutional neural networks to recognize the digital flowchart
 
 ## Overview
-The pipeline implemented in order to solve the problem of the recognition of handwritten and computer generator flowcharts uses image preprocessing, the input image is sending to the shape-connector detector. moreover, on the flow for shapes and connectors it uses unsharp masking and a model that is called [Faster R-CNN](https://arxiv.org/abs/1506.01497) with backbone VGG-16. 
+The pipeline implemented in order to solve the problem of the recognition of handwritten and computer generator flowcharts uses image preprocessing; the input image is sent to the shape-connector detector. moreover, on the flow for shapes and connectors, it uses unsharp masking and a model that is called [Faster R-CNN](https://arxiv.org/abs/1506.01497) with backbone VGG-16. I've fine-tuned the model by adjusting its **hyperparameters**. The existing dataset, which primarily contained handwritten samples, has been augmented with a newly curated computer-based dataset, and the model now performs optimally.
 
 ## How to set up for testing detections
 1. Create a virtual environment with Conda with name 'tt' and install all libraries required to perform this project, which is separately available in  **requriment.sh**
@@ -14,7 +14,8 @@ The pipeline implemented in order to solve the problem of the recognition of han
 1. Please, activate your Conda enviroment. 
 2. Move to inside repository folder, example: `$ cd handwritten-flowchart-with-cnn`
 3. Type: ```$ python3 handler.py ```
-4. Use the "Recognize flowchart" option to test detections with handwritten or computer generated flowcharts.
+4. Select model ```flowchart_3b_model.hdf5 ```
+5. Use the "Recognize flowchart" option to test detections with handwritten or computer generated flowcharts.
 
 ### Some examples of the results
 
